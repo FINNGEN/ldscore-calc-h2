@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-ADD pval_to_zscores.R munge_finngen.sh calc_h2.sh format_results.sh /
+ADD pval_to_zscores.R munge_finngen.sh calc_h2.sh format_results.sh munge_sumstats.py /
 RUN apt-get update
 RUN apt-get install -qqy r-base
 RUN apt-get install -qqy git
@@ -10,7 +10,7 @@ RUN apt-get install -qqy unzip
 RUN apt-get install -qqy python-dev
 RUN apt-get install -qqy python-setuptools
 RUN easy_install -U pip
-RUN pip install -U argparse==1.3.0 bitarray==0.8.1 nose==1.3.4 numpy==1.8.0 pandas==0.17.0 scipy==0.11.0
+RUN pip install -U argparse bitarray nose numpy pandas scipy
 RUN mkdir -p /ldsc/ && \
 	wget --quiet -P /ldsc/ https://github.com/bulik/ldsc/archive/master.zip && \
 	unzip -q /ldsc/master.zip -d /ldsc
