@@ -2,7 +2,7 @@
   "ldsc_h2.sumstats_list": "gs://r1_data/test_files.txt",
   "ldsc_h2.cpu": "2",
   "ldsc_h2.memory": "16G",
-  "ldsc_h2.docker": "eu.gcr.io/team-boston/finngen-h2-pip:0.04",
+  "ldsc_h2.docker": "eu.gcr.io/team-boston/finngen-h2-pip:0.05",
   "ldsc_h2.infofile": "gs://r1_data/release1_infofiltered_ALL_CHR.info.uniq.gz",
   "ldsc_h2.sample_nums": "gs://r1_data/pheno-list.txt"
 }

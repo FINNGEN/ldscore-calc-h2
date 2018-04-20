@@ -3,7 +3,7 @@
 sumstats_file=$1	# Phenotype sumstats file e.g. G6_MIGRAINE.gz
 LD_data="/eur_w_ld_chr/"
 
-/ldsc/ldsc-master/munge_sumstats.py \
+/ldsc/munge_sumstats.py \
 	--sumstats ${sumstats_file}.zscores \
 	--out ${sumstats_file} \
 	--N-col N \
