@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 ADD pval_to_zscores.R munge_finngen.sh calc_h2.sh format_results.sh munge_sumstats.edited.py /
+ADD pval_to_zscores.R munge_finngen.sh calc_h2.sh format_results.sh munge_sumstats.py /
 RUN apt-get update
 RUN apt-get install -qqy r-base
 RUN apt-get install -qqy git
